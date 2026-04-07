@@ -19,7 +19,7 @@ get-debloated-pkgs --add-common --prefer-nano
 
 # If the application needs to be manually built that has to be done down here
 if [ "${ARCH}" = x86_64 ]; then
-    pacman -S rocksndiamonds
+    pacman -S --noconfirm rocksndiamonds
 else
-    pacman -S rocksndiamonds --archlinux-pkg
+    pacman -S --noconfirm rocksndiamonds --archlinux-pkg
 fi
